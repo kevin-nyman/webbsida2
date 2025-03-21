@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Varukorg</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<navbar>
+    <div class="nav-links">
+            <img src="images/logga.webp" class="logo">
+        <div class="searchbar">
+            <input type="text" id="search-input" placeholder="Sök bland alla produkter">
+        </div>
+        <a href="varukorg.html">Till kassan</a>
+        <a href="/">Kundservice</a>
+    </div>
+    <categories>
+        <a href="/">Tänder</a>
+        <a href="/">Proteser</a>
+        <a href="/">Implantat</a>
+        <a href="/">Tillbehör</a>
+    </categories>
+</navbar>
+
+<content>
+    <div class="header-container">
+        <h1>Din Varukorg</h1>
+    </div>
+
+    <div class="cart-layout">
+        <div id="cart-items" class="cart-list"></div>
+
+        <div class="cart-summary">
+            <h2>Sammanfattning</h2>
+            <div class="summary-line">
+                <span>Totalt:</span>
+                <span id="total-price">0 kr</span>
+            </div>
+            <button id="checkout-button">Fortsätt till kassan</button>
+        </div>
+    </div>
+</content>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="/">Om oss</a>
+            <a href="/">Kontakt</a>
+            <a href="/">Integritetspolicy</a>
+            <a href="/">Villkor</a>
+            <a href="/">Frakt & retur</a>
+        </div>
+        <div class="footer-categories">
+            <a href="/">Populära kategorier:</a>
+            <a href="/">Tänder</a>
+            <a href="/">Proteser</a>
+            <a href="/">Implantat</a>
+            <a href="/">Tillbehör</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>sigma products</p>
+    </div>
+</footer>
+<script src="cart.js"></script>
+</body>
+</html>

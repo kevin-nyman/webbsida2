@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teeth</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<navbar>
+    <div class="nav-links">
+            <img src="images/logga.webp" class="logo">
+        <div class="searchbar">
+            <input type="text" id="search-input" placeholder="Sök bland alla produkter">
+        </div>
+        <a href="/varukorg.html">Till kassan</a>
+        <a href="/">Kundservice</a>
+    </div>
+    <categories>
+        <a href="/">Tänder</a>
+        <a href="/">Proteser</a>
+        <a href="/">Implantat</a>
+        <a href="/">Tillbehör</a>
+    </categories>
+</navbar>
+
+<content>
+    <category>
+    <category-header>
+        <p>
+            <a href="/">Startsida</a> > <a href="/">Butik</a> > <a href="/">Tänder</a>
+        </p>
+        <div class="header-container">
+            <h1>Tänder</h1>
+            <div class="filters-container">
+                <div class="filter">
+                    <label for="filter">Filter:</label>
+                    <select id="filter" name="filter">
+                        <option value="all">Alla</option>
+                        <option value="new">Nya</option>
+                        <option value="used">Begagnade</option>
+                        <option value="gold">Guldtänder</option>
+                    </select>
+                </div>
+                <div class="sort">
+                    <label for="sort">Sortera efter:</label>
+                    <select id="sort" name="sort">
+                        <option value="price-low">Pris: Lågt till högt</option>
+                        <option value="price-high">Pris: Högt till lågt</option>
+                        <option value="name">Namn</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </category-header>
+    <settings>
+    </settings>
+</category>
+
+
+
+    <div id="product-container" class="product-grid"></div>
+
+    <button id="load-more">Läs fler produkter här</button>
+</content>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="/">Om oss</a>
+            <a href="/">Kontakt</a>
+            <a href="/">Integritetspolicy</a>
+            <a href="/">Villkor</a>
+            <a href="/">Frakt & retur</a>
+        </div>
+        <div class="footer-categories">
+            <a href="/">Populära kategorier:</a>
+            <a href="/">Tänder</a>
+            <a href="/">Proteser</a>
+            <a href="/">Implantat</a>
+            <a href="/">Tillbehör</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>sigma products</p>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
